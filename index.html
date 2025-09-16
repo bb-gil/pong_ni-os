@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Biblioteca de Juegos</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: radial-gradient(circle at top, #0f2027, #203a43, #2c5364);
+      margin: 0;
+      padding: 40px;
+      color: #fff;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 3.5rem;
+      margin-bottom: 50px;
+      text-shadow: 0 0 15px #00f7ff, 0 0 30px #0077ff;
+      animation: glowTitle 2s infinite alternate;
+    }
+
+    @keyframes glowTitle {
+      from { text-shadow: 0 0 15px #00f7ff, 0 0 30px #0077ff; }
+      to { text-shadow: 0 0 25px #ff00ff, 0 0 50px #ff0099; }
+    }
+
+    .menu {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 25px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .card {
+      background: #111;
+      border-radius: 16px;
+      overflow: hidden;
+      text-align: center;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+      position: relative;
+    }
+
+    .card img {
+      width: 100%;
+      height: 140px;
+      object-fit: cover;
+      border-bottom: 2px solid #00f7ff;
+    }
+
+    .card-content {
+      padding: 15px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .card h2 {
+      margin: 10px 0 5px;
+      font-size: 1.4rem;
+      color: #fff;
+      text-shadow: 0 0 8px #00f7ff, 0 0 12px #ff00ff;
+    }
+
+    .card p {
+      margin: 0;
+      font-size: 0.9rem;
+      color: #bbb;
+    }
+
+    .card:hover {
+      transform: translateY(-8px) scale(1.05);
+      box-shadow: 0 0 25px #00f7ff, 0 0 50px #ff00ff;
+    }
+  </style>
+</head>
+<body>
+  <h1>🎮 Biblioteca de Juegos</h1>
+  
+  <div class="menu">
+    <div class="card" onclick="abrirJuego('pacman/index.html')">
+      <img src="img/pacman.jpg" alt="Juego 1">
+      <div class="card-content">
+        <h2>pacman</h2>
+      </div>
+    </div>
+
+    <div class="card" onclick="abrirJuego('juego2.html')">
+      <img src="img/juego2.jpg" alt="Juego 2">
+      <div class="card-content">
+        <h2>Juego 2</h2>
+        <p>Puzzle divertido</p>
+      </div>
+    </div>
+
+    <div class="card" onclick="abrirJuego('juego3.html')">
+      <img src="img/juego3.jpg" alt="Juego 3">
+      <div class="card-content">
+        <h2>Juego 3</h2>
+        <p>Reto rápido</p>
+      </div>
+    </div>
+
+    <div class="card" onclick="abrirJuego('juego4.html')">
+      <img src="img/juego4.jpg" alt="Juego 4">
+      <div class="card-content">
+        <h2>Juego 4</h2>
+        <p>Desafío mental</p>
+      </div>
+    </div>
+
+    <div class="card" onclick="abrirJuego('juego5.html')">
+      <img src="img/juego5.jpg" alt="Juego 5">
+      <div class="card-content">
+        <h2>Juego 5</h2>
+        <p>Arcade clásico</p>
+      </div>
+    </div>
+
+    <div class="card" onclick="abrirJuego('juego6.html')">
+      <img src="img/juego6.jpg" alt="Juego 6">
+      <div class="card-content">
+        <h2>Juego 6</h2>
+        <p>Estrategia rápida</p>
+      </div>
+    </div>
+
+    <div class="card" onclick="abrirJuego('juego7.html')">
+      <img src="img/juego7.jpg" alt="Juego 7">
+      <div class="card-content">
+        <h2>Juego 7</h2>
+        <p>Reflejos extremos</p>
+      </div>
+    </div>
+
+    <div class="card" onclick="abrirJuego('juego8.html')">
+      <img src="img/juego8.jpg" alt="Juego 8">
+      <div class="card-content">
+        <h2>Juego 8</h2>
+        <p>Modo supervivencia</p>
+      </div>
+    </div>
+
+    <div class="card" onclick="abrirJuego('juego9.html')">
+      <img src="img/juego9.jpg" alt="Juego 9">
+      <div class="card-content">
+        <h2>Juego 9</h2>
+        <p>Desafío arcade</p>
+      </div>
+    </div>
+
+    <div class="card" onclick="abrirJuego('juego10.html')">
+      <img src="img/juego10.jpg" alt="Juego 10">
+      <div class="card-content">
+        <h2>Juego 10</h2>
+        <p>Aventura gráfica</p>
+      </div>
+    </div>
+
+    <div class="card" onclick="abrirJuego('juego11.html')">
+      <img src="img/juego11.jpg" alt="Juego 11">
+      <div class="card-content">
+        <h2>Juego 11</h2>
+        <p>Juego retro</p>
+      </div>
+    </div>
+
+    <div class="card" onclick="abrirJuego('juego12.html')">
+      <img src="img/juego12.jpg" alt="Juego 12">
+      <div class="card-content">
+        <h2>Juego 12</h2>
+        <p>Trivia inteligente</p>
+      </div>
+    </div>
+
+    <div class="card" onclick="abrirJuego('juego13.html')">
+      <img src="img/juego13.jpg" alt="Juego 13">
+      <div class="card-content">
+        <h2>Juego 13</h2>
+        <p>Rompecabezas</p>
+      </div>
+    </div>
+
+    <div class="card" onclick="abrirJuego('juego14.html')">
+      <img src="img/juego14.jpg" alt="Juego 14">
+      <div class="card-content">
+        <h2>Juego 14</h2>
+        <p>Juego de lógica</p>
+      </div>
+    </div>
+
+    <div class="card" onclick="abrirJuego('juego15.html')">
+      <img src="img/juego15.jpg" alt="Juego 15">
+      <div class="card-content">
+        <h2>Juego 15</h2>
+        <p>Acción y reflejos</p>
+      </div>
+    </div>
+
+    <div class="card" onclick="abrirJuego('juego16.html')">
+      <img src="img/juego16.jpg" alt="Juego 16">
+      <div class="card-content">
+        <h2>Juego 16</h2>
+        <p>Nueva aventura</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function abrirJuego(ruta) {
+      window.open(ruta, '_blank'); // Abre el juego en otra pestaña
+    }
+  </script>
+</body>
+</html>
